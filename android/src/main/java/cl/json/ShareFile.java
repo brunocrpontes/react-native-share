@@ -128,6 +128,8 @@ public class ShareFile {
 
         if(isLocalFile()) {
             this.type = this.getMimeTypeFromFile(this.uri);
+
+            return this.type;
         }
 
         return "*/*";
